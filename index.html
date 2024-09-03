@@ -18,6 +18,22 @@
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    'sm': '350px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
                 extend: {
                     colors: {
                         clifford: '#da373d',
@@ -32,7 +48,7 @@
 
     <!-- main content -->
     <!-- <main class="max-w-screen-xl mx-auto p-6"> -->
-    <header class="max-w-screen-xl mx-auto p-6 px-12 sm:p-6">
+    <header class="mx-auto w-11/12 p-6 px-12 sm:p-6">
         <!-- navbar -->
         <nav class="flex items-center justify-between">
             <div class="flex gap-x-4 items-center">
@@ -89,10 +105,10 @@
     <!-- section -->
 
 
-    <main class="bg-zinc-100 py-8">
+    <main class="w-11/12 mx-auto bg-zinc-100 py-8">
 
         <!--1st section  -->
-        <section class="mx-auto p-16 sm:p-2">
+        <section class="w-11/12 mx-auto p-16 sm:p-2">
             <img class="-m-2 sm:hidden" src="assets/Vector.png" alt="">
             <div class="flex lg:flex-row gap-7 p-12 justify-center sm:flex-col">
 
@@ -216,8 +232,7 @@
                     metal accents.
                 </p>
             </div>
-            <div
-                class="grid grid-cols-1 lg:grid-cols-6 sm:grid-cols-1 gap-4 lg:items-stretch py-6 rounded-lg sm:items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-6 sm:grid-cols-1 gap-4 lg:items-stretch py-6 rounded-lg ">
                 <div
                     class="flex lg:flex-row sm:flex-col gap-4 col-span-4 rounded-lg p-5  border-solid border-2 border-gray-200">
                     <img src="assets/img1.png">
